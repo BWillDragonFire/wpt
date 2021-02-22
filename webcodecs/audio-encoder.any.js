@@ -199,10 +199,10 @@ promise_test(async t => {
       // a |config| in it.
       output_count++;
       if (output_count == 1) {
-        assert_not_equals(config, null);
+        assert_not_equals(config, undefined);
         decoder_config = config;
       } else {
-        assert_equals(config, null);
+        assert_equals(config, undefined);
       }
     }
   };
